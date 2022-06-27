@@ -48,7 +48,7 @@
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/buttonCreate"
         android:layout_width="60dp"
         android:layout_height="57dp"
         android:clickable="true"
