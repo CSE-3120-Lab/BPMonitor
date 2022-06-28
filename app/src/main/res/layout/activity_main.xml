@@ -24,24 +24,25 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
 
             <TextView
                 android:id="@+id/Date"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="date" />
 
             <TextView
                 android:id="@+id/blood_pressure"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="bp" />
 
             <TextView
                 android:id="@+id/heart_rate"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="heart rate" />
         </LinearLayout>
