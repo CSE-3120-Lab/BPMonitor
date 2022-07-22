@@ -1,7 +1,11 @@
 # BPMonitor
 an app that records and stores cardiac data that can be viewed by the user. developed for CSE-3120 lab project
 
-This is the main page after opening the application
+Splash screen of the app
+
+![Splash Screen](https://user-images.githubusercontent.com/103030564/180432188-593b246e-44ec-44cf-b698-7a1dedda7fb8.jpg)
+
+The main page after opening the application
 
 ![Main Screen](https://user-images.githubusercontent.com/103030564/180422302-db83c7d0-f3d4-4cee-8bca-ef55cbd5549b.jpg)
 
