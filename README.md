@@ -13,3 +13,7 @@ Preview of the date and time picker
 
 ![With date picker](https://user-images.githubusercontent.com/103030564/180422653-278ad645-90d2-4b16-9ecf-b3f5d2e87b70.jpg)
 ![with time picker](https://user-images.githubusercontent.com/103030564/180422657-668afdea-dd44-46ef-b710-77367cf8cf71.jpg)
+
+By clicking any row of the home screen, user can see the details view. And they can update or delete that section
+
+![Detals Screen](https://user-images.githubusercontent.com/103030564/180425586-060d5616-67eb-450b-bdf3-b8ed158b9f01.jpg)
