@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/beige"
     tools:context=".InputActivity">
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/systolicInput"
+        android:inputType="number"
         android:layout_width="152dp"
         android:layout_height="40dp"
-        android:hint="systollic pressure"
+        android:hint="systolic pressure"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -43,7 +45,7 @@
         app:layout_constraintVertical_bias="0.363" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/notes"
+        android:id="@+id/notesInput"
         android:layout_width="334dp"
         android:layout_height="119dp"
         android:hint="Notes (not more than 20 characters)"
@@ -56,6 +58,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/bpmInput"
+        android:inputType="number"
         android:layout_width="348dp"
         android:layout_height="47dp"
         android:hint="bpm"
@@ -68,6 +71,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/diastolicInput"
+        android:inputType="number"
         android:layout_width="152dp"
         android:layout_height="40dp"
         android:hint="daistolic pressure"
@@ -84,22 +88,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Add"
+        android:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonCancel"
         app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notes"
+        app:layout_constraintTop_toBottomOf="@+id/notesInput"
         app:layout_constraintVertical_bias="0.294" />
 
     <Button
         android:id="@+id/buttonCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
         android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notes"
+        app:layout_constraintTop_toBottomOf="@+id/notesInput"
         app:layout_constraintVertical_bias="0.318" />
 </androidx.constraintlayout.widget.ConstraintLayout>
