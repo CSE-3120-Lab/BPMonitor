@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustPan"
+    android:background="@color/beige"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Systolic Pressure"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/spUpdate"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Diastolic Pressure"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/dpUpdate"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Heart Rate"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/bpmUpdate" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <EditText
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:hint="dd-MM-yyyy"
+        android:gravity="center"
+        android:id="@+id/dateUpdate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Time"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <EditText
+        android:inputType="time"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:hint="hh:mm"
+        android:gravity="center"
+        android:id="@+id/timeUpdate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Comment"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:hint="No more than 20 words"
+        android:gravity="center"
+        android:id="@+id/notesUpdate" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/green"
+        android:gravity="center"
+        android:text="Update"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
