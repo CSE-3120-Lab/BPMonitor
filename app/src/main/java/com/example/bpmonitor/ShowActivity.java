@@ -22,8 +22,6 @@ public class ShowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show);
 
-        //getIncomingIntent();
-
             String sp=getIntent().getStringExtra("spLocation");
             String dp=getIntent().getStringExtra("dpLocation");
             String bpm=getIntent().getStringExtra("bpmLocation");
@@ -62,12 +60,12 @@ public class ShowActivity extends AppCompatActivity {
         });
 
     }
+
+    //overriding onResume to refresh the data after an update
     @Override
     public void onResume(){
         super.onResume();
         setContentView(R.layout.activity_show);
-
-        //getIncomingIntent();
 
         String sp=getIntent().getStringExtra("spLocation");
         String dp=getIntent().getStringExtra("dpLocation");
@@ -108,25 +106,6 @@ public class ShowActivity extends AppCompatActivity {
         });
 
     }
-   /* @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-        setContentView(R.layout.activity_show);
-
-        getIncomingIntent();
-    }*/
-    /*private void getIncomingIntent(){
-        if(getIntent().hasExtra("spLocation")){
-            String sp=getIntent().getStringExtra("spLocation");
-            String dp=getIntent().getStringExtra("dpLocation");
-            String bpm=getIntent().getStringExtra("bpmLocation");
-            String date=getIntent().getStringExtra("dateLocation");
-            String time=getIntent().getStringExtra("timeLocation");
-            String notes=getIntent().getStringExtra("notesLocation");
-
-            setDetails(sp,dp,bpm,date,time,notes);
-        }
-    }*/
 
     private void setDetails(String sp,String dp,String bpm,String date,String time,String notes){
         TextView spShow=findViewById(R.id.spShow2);
@@ -144,13 +123,4 @@ public class ShowActivity extends AppCompatActivity {
         notesShow.setText(notes);
 
     }
-   /* private void popup(){
-        sp =findViewById(R.id.spUpdate);
-        dp=findViewById(R.id.dpUpdate);
-        bpm=findViewById(R.id.bpmUpdate);
-        date=findViewById(R.id.dateUpdate);
-        time=findViewById(R.id.timeUpdate);
-        notes=findViewById(R.id.notesUpdate);
-        buttonUpdate = findViewById(R.id.buttonUpdate);
-    }*/
 }

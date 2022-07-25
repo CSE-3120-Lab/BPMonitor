@@ -8,7 +8,7 @@ public class details {
     private String date;
     private String time;
 
-    public details(String sp, String dd, String bpm, String time, String date, String notes) {
+    public details(String sp, String dd, String bpm, String date, String time, String notes) {
         this.sp = sp;
         this.dd = dd;
         this.bpm = bpm;
