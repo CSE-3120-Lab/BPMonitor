@@ -33,7 +33,6 @@ public class database extends SQLiteOpenHelper {
     {
         SQLiteDatabase DB=this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        //contentValues.put("id","");
         contentValues.put("sp",sp);
         contentValues.put("dp",dp);
         contentValues.put("bpm",bpm);
@@ -54,7 +53,6 @@ public class database extends SQLiteOpenHelper {
     {
         SQLiteDatabase DB=this.getWritableDatabase();
         Cursor cursor=DB.rawQuery("select * from Userdetails", null);
-        //Cursor cursor=DB.rawQuery("select sp,dp,bpm,strftime('%d-%m-%Y',date),time,notes from Userdetails", null);
         return cursor;
     }
     public void deleteData(String sp,String dp,String bpm)

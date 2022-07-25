@@ -51,6 +51,8 @@ public class InputActivity extends AppCompatActivity {
         buttonCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               /* Intent intent=new Intent(InputActivity.this,MainActivity.class);
+                startActivity(intent);*/
                 finish();
             }
         });
