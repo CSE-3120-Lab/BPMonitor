@@ -21,10 +21,6 @@ import java.util.List;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private Context context;
     List<details> detailsList;
-    //private ArrayList sp_id,dp_id,bpm_id,date_id,time_id,notes_id;
-    private int position;
-    RecyclerView recyclerView;
-    final View.OnClickListener onClickListener = new MyOnClickListener();
 
     public MyAdapter(Context context, List<details> detailsList) {
         this.context = context;
@@ -35,7 +31,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v= LayoutInflater.from(context).inflate(R.layout.userentry,parent,false);
-        //v.setOnClickListener();
         return new MyViewHolder(v);
     }
 
@@ -53,21 +48,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             holder.dp_id.setTextColor(Color.RED);
         }
         holder.bpm_id.setText(data.getBpm());
-        String date= data.getDate();
-        /*SimpleDateFormat spf=new SimpleDateFormat("yyyy-MM-dd");
-        Date newDate= null;
-        try {
-            newDate = spf.parse(date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        spf= new SimpleDateFormat("dd-MM-yyyy");
-        date = spf.format(newDate.getTime());*/
-        holder.date_id.setText(date);
-        //holder.time_id.setText(String.valueOf(time_id.get(position)));
-        //holder.notes_id.setText(String.valueOf(notes_id.get(position)));
+        holder.date_id.setText(data.getDate());
 
-        //ShowActivity on click
+        //ShowActivity on item click
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,11 +61,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 intent.putExtra("dateLocation",data.getDate());
                 intent.putExtra("timeLocation",data.getTime());
                 intent.putExtra("notesLocation",data.getNotes());
-                /*intent.putExtra("dpLocation",String.valueOf(dp_id.get(position)));
-                intent.putExtra("bpmLocation",String.valueOf(bpm_id.get(position)));
-                intent.putExtra("dateLocation",String.valueOf(date_id.get(position)));
-                intent.putExtra("timeLocation",String.valueOf(time_id.get(position)));
-                intent.putExtra("notesLocation",String.valueOf(notes_id.get(position)));*/
                 context.startActivity(intent);
             }
         });
@@ -94,22 +72,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     public class  MyViewHolder extends RecyclerView.ViewHolder {
-        TextView sp_id,dp_id,bpm_id,date_id,time_id,notes_id;
+        TextView sp_id,dp_id,bpm_id,date_id;
          public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             sp_id=itemView.findViewById(R.id.spShow);
             dp_id=itemView.findViewById(R.id.dpShow);
             bpm_id=itemView.findViewById(R.id.bpmShow);
             date_id=itemView.findViewById(R.id.dateShow);
-            //time_id=itemView.findViewById(R.id.timeShow);
-            //notes_id=itemView.findViewById(R.id.notesShow);
-        }
-    }
-
-    private class MyOnClickListener implements View.OnClickListener {
-        @Override
-        public void onClick(View v) {
-
         }
     }
 }
