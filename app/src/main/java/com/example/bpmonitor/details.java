@@ -1,5 +1,8 @@
 package com.example.bpmonitor;
 
+/**
+ * this class stores all the data
+ */
 public class details {
     private String sp;
     private String dd;
@@ -8,6 +11,21 @@ public class details {
     private String date;
     private String time;
 
+    /**
+     * constructor of the details class
+     * @param sp
+     * Systolic data
+     * @param dd
+     * Diastolic data
+     * @param bpm
+     * Pulse data
+     * @param date
+     * the Date when value was inserted
+     * @param time
+     * the time when value was inserted
+     * @param notes
+     * Notes of each record
+     */
     public details(String sp, String dd, String bpm, String date, String time, String notes) {
         this.sp = sp;
         this.dd = dd;

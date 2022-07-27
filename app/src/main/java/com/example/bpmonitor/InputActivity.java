@@ -13,12 +13,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * this class takes input of the application
+ */
 public class InputActivity extends AppCompatActivity {
 
     EditText sp,dp,bpm,date,time,notes;
     Button buttonAdd,buttonCancel;
     database DB;
 
+    /**
+     * this method will add fragment using recyclerview
+     * @param savedInstanceState
+     * takes bundle as parameter
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

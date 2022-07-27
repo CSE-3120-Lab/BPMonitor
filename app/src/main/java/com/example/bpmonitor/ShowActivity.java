@@ -15,6 +15,9 @@ import android.widget.Toast;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
+/**
+ * ShowActivity class views the details of the data
+ */
 public class ShowActivity extends AppCompatActivity {
     database DB=new database(this);
     @Override
