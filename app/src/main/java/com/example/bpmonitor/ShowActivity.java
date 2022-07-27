@@ -56,7 +56,7 @@ public class ShowActivity extends AppCompatActivity {
                 intent.putExtra("dpEdit",dp);
                 intent.putExtra("bpmEdit",bpm);
                 intent.putExtra("dateEdit",date);
-                intent.putExtra("timeEdit",date);
+                intent.putExtra("timeEdit",time);
                 intent.putExtra("notesEdit",notes);
                 startActivity(intent);
             }
@@ -101,7 +101,7 @@ public class ShowActivity extends AppCompatActivity {
                 intent.putExtra("dpEdit",dp);
                 intent.putExtra("bpmEdit",bpm);
                 intent.putExtra("dateEdit",date);
-                intent.putExtra("timeEdit",date);
+                intent.putExtra("timeEdit",time);
                 intent.putExtra("notesEdit",notes);
                 startActivity(intent);
                 finish();
