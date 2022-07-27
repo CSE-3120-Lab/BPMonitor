@@ -15,7 +15,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-
+/**
+ * DatabaseUnitTest class for unit testing on Database insertion, deletion or update
+ */
 @RunWith(RobolectricTestRunner.class)
 public class DatabaseUnitTest {
     /**

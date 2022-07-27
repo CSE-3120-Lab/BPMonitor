@@ -86,6 +86,24 @@ public class database extends SQLiteOpenHelper {
             return true;
         }
     }
+
+    /**
+     * insert record into sqlite database
+     * @param sp
+     * Systolic data
+     * @param dp
+     * Diastolic data
+     * @param bpm
+     * Pulse data
+     * @param date
+     * the Date when value was inserted
+     * @param time
+     * the time when value was inserted
+     * @param notes
+     * Notes of each record
+     * @return
+     * return long value
+     */
     public long checkuserdata(String sp,String dp,String bpm,String date,String time,String notes)
     {
         SQLiteDatabase DB=this.getWritableDatabase();

@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * this class helps to edit the existing details
+ */
 public class popupActiviy extends AppCompatActivity {
     database DB=new database(this);
     EditText spEdit,dpEdit,bpmEdit,dateEdit,timeEdit,notesEdit;

@@ -18,11 +18,21 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * This is MainActivity class of the application
+ */
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     List<details> detailsList;
     database DB;
     MyAdapter adapter;
+
+    /**
+     * this method will add fragment using recyclerview
+     * @param savedInstanceState
+     * takes a bundle type parameter
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //overriding onResume to refresh the data after an update
+
+    /**
+     * this will refresh data after an update
+     */
     @Override
     public void onResume(){
         super.onResume();
@@ -61,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
         buttonPlus.setOnClickListener(view -> startActivity(new Intent(MainActivity.this,InputActivity.class)));
     }
 
+    /**
+     * This will display the existing data
+     */
     private void displaydata() {
         Cursor cursor=DB.getdata();
         if (cursor.moveToFirst()) {
